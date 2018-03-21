@@ -1,0 +1,176 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+GLOBAL
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+/*
+///////////////////////////////////////////////////////////////////////////////
+FONTS
+///////////////////////////////////////////////////////////////////////////////
+*/
+.material-icons{
+
+}
+/*
+///////////////////////////////////////////////////////////////////////////////
+HEADER
+///////////////////////////////////////////////////////////////////////////////
+*/
+header{
+  overflow: hidden;
+}
+nav{
+  overflow: hidden;
+}
+header nav{
+  margin-top: 30px;
+}
+header ul{
+  float:right;
+  list-style: none;
+  padding: 0 30px;
+}
+header li{
+  float: left;
+  padding-left: 15px;
+  display: flex;
+
+}
+header li a{
+}
+#user-img{
+  height:32px;
+  width: 32px;
+  background-image: url(../images/seka.jpg);
+  background-size: 32px;
+  border-radius: 50%;
+}
+/*
+///////////////////////////////////////////////////////////////////////////////
+MAIN
+///////////////////////////////////////////////////////////////////////////////
+*/
+main{
+  position: relative;
+  clear: both;
+  padding-top: 130px;
+}
+#logo{
+  margin: 0 auto;
+  background-image: url(../images/google-logo.png);
+  width:272px;
+  height: 92px;
+  background-size: 272px 92px;
+}
+#search-box-container{
+  margin-top: 25px;
+}
+#search-box {
+  width: 584px;
+  height: 44px;
+  border: solid 1px #d0caca;
+  margin: 0 auto;
+  border-radius: 3px;
+box-shadow: 0px 2px 1px 0px rgba(1,1,0,.15);
+}
+
+#search-box:hover {
+  animation-name: search-shadow;
+  animation-duration: .7s;
+animation-fill-mode: forwards;
+}
+form {
+  display: inline-block;
+  padding: 4px 0 0 15px;
+}
+form input {
+  border: none 0;
+  width: 525px;
+  height: 34px;
+  font-size: 1em;
+  outline: none;
+}
+.search-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-size: 24px 24px;
+}
+#search-buttons{
+  text-align: center;
+  margin-top: 30px;
+}
+#search-buttons input{
+  -webkit-appearance: none;
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  background:linear-gradient(top,#f5f5f5,#f1f1f1);
+  color: #757575;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  text-align: center; 
+  padding: 0 20px;
+}
+#talk {
+  vertical-align: middle;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC');
+}
+/*
+///////////////////////////////////////////////////////////////////////////////
+FOOTER
+///////////////////////////////////////////////////////////////////////////////
+*/
+footer{
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  border-top: 1px solid #e4e4e4;
+}
+#country{
+  padding-left: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+#country span{
+  line-height: 40px;
+  font-size: 15px;
+  opacity: 0.54;
+  vertical-align: middle;
+}
+#options{
+  overflow: hidden;
+  padding-right: 30px;
+}
+footer ul{
+  list-style: none;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+footer li{
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 30px;
+  font-size: small;
+}
+footer li a{
+  color: #666;
+}
